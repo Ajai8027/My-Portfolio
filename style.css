@@ -66,18 +66,18 @@
         }
 
         .home-content p {
-            font-size: 18px;
+            font-size: 17px;
             margin: 20px 0 40px;
-            padding: 4%;
-            margin-left: -4%;
-            letter-spacing: 1px;
+            padding: 4px;
+            letter-spacing: 2px;
+            width: 100%;
         }
 
         .btn-box {
             display: flex;
             gap: 20px;
             padding: 0 10%;
-            margin-top: -8%;
+            margin-top: -6%;
         }
 
         .btn-box a {
@@ -134,7 +134,7 @@
             padding: 20px;
             position: absolute;
             bottom: 0;
-            margin-left: 8%;
+            margin-left: 10%;
         }
 
         .footer a {
