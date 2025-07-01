@@ -19,8 +19,9 @@
         }
 
         nav h1 {
-            font-size: 25px;
+            font-size: 30px;
             font-weight: 600;
+            margin-left: 10%;
         }
 
         nav ul {
@@ -55,7 +56,7 @@
         .home-content h1 {
             font-size: 56px;
             font-weight: 700;
-            line-height: 1.2;
+            line-height: 1.4;
         }
 
         .home-content h3 {
@@ -65,15 +66,18 @@
         }
 
         .home-content p {
-            font-size: 16px;
+            font-size: 18px;
             margin: 20px 0 40px;
+            padding: 4%;
+            margin-left: -4%;
+            letter-spacing: 1px;
         }
 
         .btn-box {
             display: flex;
             gap: 20px;
             padding: 0 10%;
-            margin-top: -10%;
+            margin-top: -8%;
         }
 
         .btn-box a {
