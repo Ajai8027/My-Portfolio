@@ -11,6 +11,10 @@
      background: url(bg.png);
      background-size: cover;
  }
+ 
+ .hero nav h1{
+    margin-left:-1px;
+ }
 
  nav {
      display: flex;
