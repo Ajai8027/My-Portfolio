@@ -12,10 +12,6 @@
      background-size: cover;
  }
  
- .hero nav h1{
-    margin-left:-1px;
- }
-
  nav {
      display: flex;
      align-items: center;
@@ -171,7 +167,7 @@
      display: inline-block;
      gap: 20px;
      padding: 0 10%;
-     margin-top: -6%;
+     margin-top: 1%;
      margin-left: -10%;
  }
 
@@ -204,7 +200,7 @@
  }
 
  .btn-box a:nth-child(2):hover {
-     color: #081b29;
+     color: #00abf0;
  }
 
  .btn-box a:before {
@@ -225,7 +221,7 @@
 
  .footer {
      padding: 4px;
-     margin-top: 5%;
+     margin-top: 3%;
  }
 
  .footer a {
