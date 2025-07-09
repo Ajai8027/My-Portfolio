@@ -212,7 +212,7 @@ a {
          nav {
              flex-direction: column;
              align-items: flex-start;
-             padding: 20px;
+             padding: 40px;
          }
 
          nav ul {
