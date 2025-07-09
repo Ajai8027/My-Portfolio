@@ -79,7 +79,7 @@ footer {
 
 @media screen and (max-width: 768px) {
     .container {
-        width: 90%;
+        width: 120%;
         padding: 10px;
     }
 
@@ -87,6 +87,7 @@ footer {
     th,
     td {
         font-size: 12px;
+        width: 100%;
     }
 
     ul li,
