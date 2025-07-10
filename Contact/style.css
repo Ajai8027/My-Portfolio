@@ -3,6 +3,11 @@
  }
 
 
+ .menu-icon {
+     display: none;
+     font-size: 28px;
+     cursor: pointer;
+ }
 
  nav {
      display: flex;
@@ -201,8 +206,8 @@
 
  /* Responsive Design */
  @media (max-width: 768px) {
-    
-    nav {
+
+     nav {
          display: flex;
          flex-direction: column;
          align-items: center;
@@ -220,7 +225,7 @@
      nav ul li {
          margin: 10px 0;
      }
-     
+
      .menu-icon {
          display: block;
      }
@@ -241,7 +246,7 @@
          margin: 10px 0;
      }
 
-     
+
      nav h1 {
          margin-left: 0;
          font-size: 24px;
