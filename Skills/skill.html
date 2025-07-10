@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills - Ajith Kumar</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
@@ -13,12 +14,20 @@
     <div class="hero">
         <nav>
             <h1 style="margin-left: 1px;">Ajith Kumar</h1>
-            <ul>
+
+            <!-- Hamburger icon -->
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class='bx bx-menu'></i>
+            </div>
+
+            <!-- Navigation links -->
+            <ul class="nav-links">
                 <li><a href="https://ajai8027.github.io/My-Portfolio/">Home</a></li>
                 <li><a href="https://ajai8027.github.io/My-Portfolio/About/about.html">About</a></li>
                 <li><a href="https://ajai8027.github.io/My-Portfolio/Skills/skill.html">Skill</a></li>
                 <li><a href="https://ajai8027.github.io/My-Portfolio/Contact/contact.html">Contact</a></li>
             </ul>
+
             <a href="Resume/resume.html" target="_blank" class="btn">Resume</a>
         </nav>
 
@@ -29,7 +38,7 @@
                     <i class='bx bxl-html5'></i>
                     <h3>HTML5</h3>
                     <p>Semantic HTML, forms, multimedia, SEO structure</p>
-                    <div class="card__indicator"> <span class="card__indicator-percentage">80%</span></div>
+                    <div class="card__indicator"> <span class="card__indicator-percentage">80%</span> </div>
                     <div class="card__progress"><progress value="80" max="100"></progress></div>
                 </div>
             </div>
@@ -39,7 +48,7 @@
                 <p>Flexbox, Grid, Animations, Media Queries, Responsive Design</p>
                 <div class="card__indicator"> <span class="card__indicator-percentage">80%</span></div>
                 <div class="card__progress"><progress value="80" max="100"></progress></div>
-             </div>
+            </div>
             <div class="skill-card">
                 <i class='bx bxl-javascript'></i>
                 <h3>JavaScript</h3>
@@ -47,54 +56,61 @@
                 <div class="card__indicator"> <span class="card__indicator-percentage">50%</span></div>
                 <div class="card__progress"><progress value="50" max="100"></progress></div>
             </div>
-          <div class="skill-card">
-            <i class='bx bxl-wordpress'></i>
-            <h3>WordPress</h3>
-            <p>Theme customization, Elementor, SEO setup</p>
-            <div class="card__indicator"> <span class="card__indicator-percentage">70%</span></div>
-            <div class="card__progress"><progress value="70" max="100"></progress></div>
-         </div>
-    
-           <div class="skill-card">
-          <i class='bx bx-paint'></i>
-           <h3>UI/UX Design</h3>
-           <p>Figma, Canva, user-friendly design, wireframing</p>
-           <div class="card__indicator"> <span class="card__indicator-percentage">50%</span></div>
-          <div class="card__progress"><progress value="50" max="100"></progress></div>
-         </div>
-    
-         <div class="skill-card">
-          <i class='bx bx-search-alt'></i>
-          <h3>SEO</h3>
-          <p>On-page SEO, keyword research, site optimization</p>
-          <div class="card__indicator"> <span class="card__indicator-percentage">40%</span></div>
-          <div class="card__progress"><progress value="40" max="100"></progress></div>
+            <div class="skill-card">
+                <i class='bx bxl-wordpress'></i>
+                <h3>WordPress</h3>
+                <p>Theme customization, Elementor, SEO setup</p>
+                <div class="card__indicator"> <span class="card__indicator-percentage">70%</span></div>
+                <div class="card__progress"><progress value="70" max="100"></progress></div>
+            </div>
+
+            <div class="skill-card">
+                <i class='bx bx-paint'></i>
+                <h3>UI/UX Design</h3>
+                <p>Figma, Canva, user-friendly design, wireframing</p>
+                <div class="card__indicator"> <span class="card__indicator-percentage">50%</span></div>
+                <div class="card__progress"><progress value="50" max="100"></progress></div>
+            </div>
+
+            <div class="skill-card">
+                <i class='bx bx-search-alt'></i>
+                <h3>SEO</h3>
+                <p>On-page SEO, keyword research, site optimization</p>
+                <div class="card__indicator"> <span class="card__indicator-percentage">40%</span></div>
+                <div class="card__progress"><progress value="40" max="100"></progress></div>
+            </div>
+
+            <div class="skill-card">
+                <i class='bx bxs-data'></i>
+                <h3>Google Sheets</h3>
+                <p>Data handling, automation, integration with websites</p>
+                <div class="card__indicator"> <span class="card__indicator-percentage">80%</span></div>
+                <div class="card__progress"><progress value="80" max="100"></progress></div>
+            </div>
+            <div class="skill-card">
+                <i class='bx bx-devices'></i>
+                <h3>Responsive Design</h3>
+                <p>Mobile-first development for all screen sizes</p>
+                <div class="card__indicator"> <span class="card__indicator-percentage">80%</span></div>
+                <div class="card__progress"><progress value="80" max="100"></progress></div>
+            </div>
+        </div>
+
+
+        <div class="footer" style="text-align: center;">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/ajai.digital/" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a href="https://github.com/Ajai8027" target="_blank"><i class='bx bxl-github'></i></a>
+        </div>
     </div>
 
-    <div class="skill-card">
-        <i class='bx bxs-data'></i>
-        <h3>Google Sheets</h3>
-        <p>Data handling, automation, integration with websites</p>
-        <div class="card__indicator"> <span class="card__indicator-percentage">80%</span></div>
-        <div class="card__progress"><progress value="80" max="100"></progress></div>
-
-    </div>
-    <div class="skill-card">
-        <i class='bx bx-devices'></i>
-        <h3>Responsive Design</h3>
-        <p>Mobile-first development for all screen sizes</p>
-        <div class="card__indicator"> <span class="card__indicator-percentage">80%</span></div>
-        <div class="card__progress"><progress value="80" max="100"></progress></div>
-    </div>
-    </div>
-    
-
-    <div class="footer" style="text-align: center;">
-        <a href="#"><i class='bx bxl-facebook'></i></a>
-        <a href="https://www.instagram.com/ajai.digital/" target="_blank"><i class='bx bxl-instagram'></i></a>
-        <a href="https://github.com/Ajai8027" target="_blank"><i class='bx bxl-github'></i></a>
-    </div>
-    </div>
 </body>
+
+<script>
+    function toggleMenu() {
+ const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+  }
+</script>
 
 </html>
