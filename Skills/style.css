@@ -158,12 +158,36 @@
      color: #555;
  }
 
+ .card__indicator {
+     margin-top: 50px;
+     font-weight: 500;
+     font-size: 14px;
+ }
+
+ .card__progress progress {
+     width: 50%;
+     height: 15px;
+     border-radius: 100px;
+     background-color: transparent;
+ }
+
+ .card__progress progress::-webkit-progress-bar {
+     border-radius: 100px;
+ }
+
+ .card__progress progress::-webkit-progress-value {
+    background-color: #00abf0;
+     border-radius: 100px;
+ }
+
  .footer {
      padding: 4px;
      margin-top: 3%;
 
 
- }.footer a {
+ }
+
+ .footer a {
      width: 40px;
      height: 40px;
      display: inline-flex;
@@ -180,7 +204,7 @@
      transition: 0.5s;
  }
 
-  .footer a::before {
+ .footer a::before {
      content: '';
      position: absolute;
      top: 0;
@@ -200,14 +224,14 @@
 
 
  @media (max-width: 768px) {
-    nav {
-             flex-direction: column;
-             align-items: flex-start;
-             padding: 40px;
-         } 
-    
-    .skills-section {
-         padding: 40px 20% ;
+     nav {
+         flex-direction: column;
+         align-items: flex-start;
+         padding: 40px;
+     }
+
+     .skills-section {
+         padding: 40px 20%;
      }
 
      .skills-section h2 {
