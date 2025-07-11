@@ -7,60 +7,79 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
 <body>
+    <div class="hero">
+        <nav>
+            <h1 style="margin-left: 1px;">Ajith Kumar</h1>
 
-    <body>
-        <div class="hero">
-            <nav>
-                <h1 style="margin-left: 1px;">Ajith Kumar</h1>
+            <!-- Hamburger icon -->
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class='bx bx-menu'></i>
+            </div>
 
-                <!-- Hamburger icon -->
-                <div class="menu-icon" onclick="toggleMenu()">
-                    <i class='bx bx-menu'></i>
-                </div>
+            <!-- Navigation links -->
+            <ul class="nav-links">
+                <li><a href="https://ajai8027.github.io/My-Portfolio/">Home</a></li>
+                <li><a href="https://ajai8027.github.io/My-Portfolio/About/about.html">About</a></li>
+                <li><a href="https://ajai8027.github.io/My-Portfolio/Skills/skill.html">Skill</a></li>
+                <li><a href="https://ajai8027.github.io/My-Portfolio/Contact/contact.html">Contact</a></li>
+            </ul>
 
-                <!-- Navigation links -->
-                <ul class="nav-links">
-                    <li><a href="https://ajai8027.github.io/My-Portfolio/">Home</a></li>
-                    <li><a href="https://ajai8027.github.io/My-Portfolio/About/about.html">About</a></li>
-                    <li><a href="https://ajai8027.github.io/My-Portfolio/Skills/skill.html">Skill</a></li>
-                    <li><a href="https://ajai8027.github.io/My-Portfolio/Contact/contact.html">Contact</a></li>
-                </ul>
+            <a href="Resume/resume.html" target="_blank" class="btn">Resume</a>
+        </nav>
+        <div class="home">
+            <div class="profile-pic">
+                <img src="ajith-profile.png" alt="Ajith Kumar" />
+            </div>
+            <span class="home-content">Creative Frontend Developer</span>
+            <h1>Hi, I'm <span>Ajith Kumar</span></h1>
+            <p>
+                I am a Front-end Developer. Designing a site and building a website for customers. I Specialize in
+                HTML, CSS, JavaScript, and basic digital marketing Skills like Web Design(website build) and Seo
+                optimization then I have worked with some CMS platforms like WordPress, Google Sheets, Figma, Canva,
+                etc.. I am
+                passionate about Creating websites that are visually appealing and easy to use for customers. I have
+                worked on projects ranging from small business websites. My goal is to provide the best web
+                experience to my clients and I strive to meet their needs and expectations.
+            </p>
+            <div class="btn-box">
+                <a href="karthicksignupbusiness@gmail.com">Hire Me</a>
+                <a href="https://ajai8027.github.io/My-Portfolio/Contact/contact.html">Let's Talk</a>
+                <section id="contact">...</section>
 
-                <a href="Resume/resume.html" target="_blank" class="btn">Resume</a>
-            </nav>
-            <div class="home">
-                <span class="home-content">Frontend Developer</span>
-                <h1>Hello, I'm <span>Ajith</span></h1>
-                <p>
-                    I am a Front-end Developer. Designing a site and building a website for customers. I Specialize in
-                    HTML, CSS, JavaScript, and basic digital marketing Skills like Web Design(website build) and Seo
-                    optimization then I have worked with some CMS platforms like WordPress, Google Sheets, Figma, Canva,
-                    etc.. I am
-                    passionate about Creating websites that are visually appealing and easy to use for customers. I have
-                    worked on projects ranging from small business websites. My goal is to provide the best web
-                    experience to my clients and I strive to meet their needs and expectations.
-                </p>
-                <div class="btn-box">
-                    <a href="#">Hire Me</a>
-                    <a href="#">Let's Talk</a>
-                </div>
-                <div class="footer">
-                    <a href="#"><i class='bx bxl-facebook'></i></a>
-                    <a href="https://www.instagram.com/ajai.digital/" target="_blank"><i
-                            class='bx bxl-instagram'></i></a>
-                    <a href="https://github.com/Ajai8027" target="_blank"><i class='bx bxl-github'></i></a>
-                </div>
-                <span class="home-imgHover"></span>
-    </body>
+            </div>
+            <div class="footer">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/ajai.digital/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                <a href="https://github.com/Ajai8027" target="_blank"><i class='bx bxl-github'></i></a>
+            </div>
+            <span class="home-imgHover"></span>
+</body>
 
-    <script>
-        function toggleMenu() {
-            const navLinks = document.querySelector('.nav-links');
-            navLinks.classList.toggle('active');
-        }
-    </script>
+<script>
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+    }
+
+    //buttom//
+    document.addEventListener('DOMContentLoaded', () => {
+        const links = document.querySelectorAll('.nav-links a');
+        links.forEach(link => {
+            if (link.href === window.location.href) {
+                link.style.color = '#fd4766';
+                link.style.fontWeight = 'bold';
+            }
+        });
+    });
+</script>
 
 </html>
