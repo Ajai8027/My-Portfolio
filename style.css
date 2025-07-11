@@ -137,9 +137,12 @@ nav ul li a:hover:after {
 
 .profile-pic img {
     width: 250px;
-    border-radius: 50%;
+    border-radius: 10%;
+    height: 380px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     margin-top: 20px;
+    margin-bottom: 2%;
+    margin-top: -7%;
 }
 
 
