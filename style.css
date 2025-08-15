@@ -120,17 +120,6 @@ nav ul li a:hover:after {
     transform: scale(1.05);
 }
 
-.profile-pic img {
-    display: flex;
-    position: sticky;
-    border-radius: 10%;
-    height: 480px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-    margin-top: 30%;;
-    margin-left:40%;
-}
-
-
 .home {
     position: absolute;
     top: 35%;
@@ -145,6 +134,17 @@ nav ul li a:hover:after {
     margin-left: 45%;
     margin-top:-5%;
     color: #444;
+}
+
+.profile-pic img {
+    display: flex;
+    position: sticky;
+    border-radius: 10%;
+    height: 480px;
+    width: 680px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    margin-top: 35%;
+    margin-left:40%;
 }
 
 .home-content {
