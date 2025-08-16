@@ -1,6 +1,6 @@
 *{
 
-    font: size 12px;
+    font-size:medium;
 
 }
 
@@ -295,15 +295,15 @@ nav ul li a:hover:after {
 
     border-radius: 10%;
 
-    height: 480px;
+    height: 420px;
 
-    width: 680px;
+    width: 640px;
 
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 
     margin-top: 35%;
 
-    margin-left:40%;
+    margin-left:38%;
 
 }
 
