@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Projects</title>
+  <link rel="stylesheet" href="../style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <h1 style="margin-left: 3%; font-size: 36px;">Ajith Kumar</h1>
+    <div class="menu-icon" onclick="toggleMenu()"><i class='bx bx-menu'></i></div>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../Projects/projects.html">Projects</a></li>
+      <li><a href="../Skills/skill.html">Skills</a></li>
+      <li><a href="../About/about.html">About</a></li>
+      <li><a href="../Contact/contact.html">Contact</a></li>
+    </ul>
+    <a href="../Resume/resume.html" target="_blank" class="btn">Resume</a>
+  </nav>
+
+  <!-- Page Content -->
+  <section class="home">
+    <h1>My <span>Projects</span></h1>
+    <p>Here are some of the projects I have worked on recently:</p>
+    <div class="project-card">
+      <h2>🌐 Portfolio Website</h2>
+      <p>A personal portfolio built with HTML, CSS, and JavaScript.</p>
+    </div>
+
+    <div class="project-card">
+      <h2>📊 Google Sheets Automation</h2>
+      <p>Automated reporting workflows with Google Apps Script.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+   <!-- <div class="footer">
+    <a href="#"><i class='bx bxl-facebook'></i></a>
+    <a href="https://www.instagram.com/ajai.digital/" target="_blank"><i class='bx bxl-instagram'></i></a>
+    <a href="https://github.com/Ajai8027" target="_blank"><i class='bx bxl-github'></i></a>
+  </div> -->
+  <!-- Script -->
+  <script>
+      function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+      const links = document.querySelectorAll('.nav-links a');
+      links.forEach(link => {
+        if (link.href === window.location.href) {
+          link.style.color = '#fd4766';
+          link.style.fontWeight = 'bold';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
