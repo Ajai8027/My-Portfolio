@@ -213,6 +213,11 @@ a {
 
 }
 
+.gallery-item a img{
+    width:700px;
+    height: 400px;
+}
+
 
 
 /* Hover effect for the image */
