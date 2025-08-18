@@ -1,97 +1,403 @@
-*{
+/* Basic styling for the body */
 
-    font-size:medium;
+body {
 
-}
+    font-family: Arial, sans-serif;
 
-.home {
-  width: 100%;
-  min-height: 100vh;
-  padding: 100px 8% 60px;
-  background: #f9f9f9;
-  text-align: center;
-}
+    background-color: #f0f0f0;
 
-.home h1 {
-  font-size: 42px;
-  color: #222;
-  margin-bottom: 15px;
-}
+    margin: 0;
 
-.home h1 span {
-  color: #fd4766;
-}
-
-.home p {
-  font-size: 18px;
-  color: #555;
-  margin-bottom: 40px;
-}
-
-/* Project Card */
-.project-card {
-  background: #fff;
-  border-radius: 15px;
-  padding: 25px;
-  margin: 20px auto;
-  max-width: 600px;
-  text-align: left;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
-}
-
-.project-card h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: #333;
-}
-
-.project-card p {
-  font-size: 16px;
-  color: #666;
-  line-height: 1.5;
-}
-
-/* Hover Effect */
-.project-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
-  border-left: 5px solid #fd4766;
-}
-
-.footer{
-    display: flex;
-    position: absolute;
-    text-align: end;
-}
-
-
-
-/* Responsive Layout */
-@media (max-width: 768px) {
-  .home {
-    padding: 80px 5% 40px;
-  }
-
-  .home h1 {
-    font-size: 30px;
-  }
-
-  .home p {
-    font-size: 16px;
-  }
-
-  .project-card {
     padding: 20px;
-    margin: 15px auto;
-  }
 
-  .project-card h2 {
-    font-size: 20px;
-  }
+}
 
-  .project-card p {
-    font-size: 14px;
-  }
+
+
+* {
+
+    font-size: medium;
+
+}
+
+
+
+a {
+
+    text-decoration: none;
+
+}
+
+
+
+.menu-icon {
+
+    display: none; /* Hidden by default on large screens */
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+}
+
+
+
+nav {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 30px 100px;
+
+}
+
+
+
+nav ul {
+
+    display: flex;
+
+    list-style: none;
+
+    gap: 20px;
+
+}
+
+
+
+h1 {
+
+    max-height: 60px;
+
+}
+
+
+
+nav ul li {
+
+    list-style: none;
+
+    display: inline-block;
+
+    padding: 10px 20px;
+
+}
+
+
+
+nav ul li a {
+
+    color: #1f1f25;
+
+    position: relative;
+
+    padding: 5px 0;
+
+}
+
+
+
+nav ul li a:hover {
+
+    color: #fd4766;
+
+}
+
+
+
+nav ul li a:after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    width: 0;
+
+    height: 3px;
+
+    background: #fd4766;
+
+    transition: 0.3s;
+
+    bottom: 0;
+
+}
+
+
+
+nav ul li a:hover:after {
+
+    width: 100%;
+
+}
+
+
+
+nav h1 {
+
+    font-size: 30px;
+
+    font-weight: 600;
+
+    margin-left: 10%;
+
+}
+
+
+
+.btn {
+
+    color: #fff;
+
+    font-size: 16px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    padding: 16px 40px;
+
+    border-radius: 500px;
+
+    display: inline-block;
+
+    font-weight: 500;
+
+    transition: all 0.4s ease-in-out;
+
+    background-size: 152% 100%;
+
+    background: #fd4766;
+
+    border: 2px solid #fd4766;
+
+}
+
+
+
+.btn:hover {
+
+    background: transparent;
+
+    border-color: #fd4766;
+
+    color: #fd4766;
+
+}
+
+
+
+/* Main container for the portfolio gallery */
+
+.portfolio-gallery {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 20px;
+
+    padding: 20px;
+
+}
+
+
+
+/* Styling for each gallery item */
+
+.gallery-item {
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 8px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+
+
+/* Hover effect for the gallery item */
+
+.gallery-item:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+/* Styling for the gallery images */
+
+.gallery-item img {
+
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+    transition: transform 0.3s ease, filter 0.3s ease;
+
+}
+
+
+
+/* Hover effect for the image */
+
+.gallery-item:hover img {
+
+    transform: scale(1.1);
+
+    filter: brightness(1.2);
+
+}
+
+
+
+/* Styling for the caption */
+
+.gallery-item .caption {
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 0;
+
+    right: 0;
+
+    background-color: rgba(0, 0, 0, 0.7);
+
+    color: #fff;
+
+    padding: 15px;
+
+    transform: translateY(100%);
+
+    transition: transform 0.3s ease;
+
+}
+
+
+
+/* Shows the caption on hover */
+
+.gallery-item:hover .caption {
+
+    transform: translateY(0);
+
+}
+
+
+
+/* Styling for the caption heading */
+
+.caption h3 {
+
+    margin: 0 0 5px;
+
+    font-size: 1.2em;
+
+}
+
+
+
+/* Styling for the caption paragraph */
+
+.caption p {
+
+    margin: 0;
+
+    font-size: 0.9em;
+
+}
+
+
+
+/* Media query for smaller screens */
+
+@media (max-width: 768px) {
+
+    nav {
+
+        flex-direction: column;
+
+        align-items: center;
+
+        padding: 20px;
+
+        text-align: center;
+
+    }
+
+    
+
+    /* FIX: Show the menu icon on mobile */
+
+    .menu-icon {
+
+        display: block;
+
+        position: absolute;
+
+        top: 35px;
+
+        right: 25px;
+
+    }
+
+
+
+    /* FIX: Hide the nav links by default on mobile */
+
+    .nav-links {
+
+        display: none;
+
+        flex-direction: column;
+
+        width: 100%;
+
+        margin-top: 10px;
+
+    }
+
+
+
+    /* FIX: Show the nav links when 'active' class is added */
+
+    .nav-links.active {
+
+        display: flex;
+
+    }
+
+
+
+    .nav-links li {
+
+        margin: 10px 0;
+
+    }
+
+
+
+    .portfolio-gallery {
+
+        grid-template-columns: 1fr;
+
+    }
+
 }
