@@ -23,7 +23,6 @@ a {
 
  nav {
      display: flex;
-     background-color: #ffff;
      align-items: center;
      justify-content: space-between;
      padding: 30px 100px;
