@@ -8,24 +8,25 @@ a {
      text-decoration: none;
  }
 
+
  .menu-icon {
      display: none;
      font-size: 28px;
      cursor: pointer;
  }
 
- nav ul {
-     display: flex;
-     list-style: none;
-     gap: 20px;
- }
-
-
  nav {
      display: flex;
      align-items: center;
      justify-content: space-between;
+     background-color: #f9f9f9;
      padding: 30px 100px;
+ }
+
+ nav ul {
+     display: flex;
+     list-style: none;
+     gap: 20px;
  }
 
  h1 {
@@ -40,7 +41,7 @@ a {
  }
 
  nav ul li a {
-     color: #1f1f25;
+     color: #000;
      position: relative;
      padding: 5px 0;
  }
@@ -106,6 +107,7 @@ a {
  nav ul li a:hover:after {
      width: 100%
  }
+
 
  .btn {
      color: #fff;
