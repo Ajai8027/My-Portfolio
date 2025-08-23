@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f7f7f7;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+}
+
+header h3,
+header p {
+    margin: 5px 0;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #333;
+    margin: 20px 0;
+}
+
+main {
+    padding: 10px 0;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #999;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+}
+
+ol,
+ul {
+    margin-left: 20px;
+}
+
+ul li,
+ol li {
+    margin: 5px 0;
+}
+
+footer {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.declaration p {
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header h3 {
+        font-size: 18px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    table,
+    th,
+    td {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    section h3 {
+        font-size: 18px;
+    }
+
+    p,
+    li {
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 13px;
+    }
+
+    ol,
+    ul {
+        margin-left: 15px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    header h3 {
+        font-size: 16px;
+    }
+
+    table,
+    th,
+    td {
+        font-size: 11px;
+        padding: 5px;
+    }
+
+    section h3 {
+        font-size: 16px;
+    }
+
+    p,
+    li {
+        font-size: 13px;
+    }
+}
