@@ -115,13 +115,13 @@ a {
 
     font-size: 16px;
 
-    margin-right: 50px;
-
     text-transform: uppercase;
 
     letter-spacing: 2px;
 
     padding: 16px 40px;
+
+    margin-right: 50px;
 
     border-radius: 500px;
 
@@ -316,8 +316,9 @@ a {
          font-size: 24px;
      }
 
-     .btn {
+     .h1,button {
          margin-top: 10px;
+         margin-right:50%;
      }
 
      .home {
@@ -343,7 +344,7 @@ a {
          font-size: 14px;
      }
 
-     .btn-box {
+     .h1 button {
          flex-direction: column;
          align-items: center;
          padding: 0;
@@ -351,7 +352,7 @@ a {
          margin-left: 0;
      }
 
-     .btn-box a {
+     .button a {
          width: 80%;
          margin: 10px 0;
      }

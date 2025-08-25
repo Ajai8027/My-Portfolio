@@ -123,6 +123,8 @@ a {
 
     padding: 16px 40px;
 
+    margin-right: 50px;
+
     border-radius: 500px;
 
     display: inline-block;
@@ -631,9 +633,10 @@ a {
 
 
 
-    .btn {
+    .h1,button{
 
         margin-top: 10px;
+        margin-right: 50%;
 
     }
 
@@ -685,7 +688,7 @@ a {
 
 
 
-    .btn-box {
+    .h1 button {
 
         flex-direction: column;
 
@@ -695,13 +698,13 @@ a {
 
         margin-top: 20px;
 
-        margin-left: 0;
+        margin-left: 0px;
 
     }
 
 
 
-    .btn-box a {
+    .h1 button {
 
         width: 80%;
 
