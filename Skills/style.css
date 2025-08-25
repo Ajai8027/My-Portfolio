@@ -109,26 +109,60 @@ a {
  }
 
 
- .btn {
-     color: #fff;
-     font-size: 16px;
-     text-transform: uppercase;
-     letter-spacing: 2px;
-     padding: 16px 40px;
-     border-radius: 500px;
-     display: inline-block;
-     font-weight: 500;
-     transition: all 0.4s ease-in-out;
-     background-size: 152% 100%;
-     background: #fd4766;
-     border: 2px solid #fd4766;
- }
+ .h1,button {
+    cursor: pointer;
+    
+    color: #fff;
 
- .btn:hover {
-     background: transparent;
-     border-color: #fd4766;
-     color: #fd4766;
- }
+    font-size: 16px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    padding: 16px 40px;
+
+    margin-right: 50px;
+
+    border-radius: 500px;
+
+    display: inline-block;
+
+    font-weight: 500;
+
+    transition: all 0.4s ease-in-out;
+
+    background-size: 152% 100%;
+
+    background: #fd4766;
+
+    border: 2px solid #fd4766;
+
+}
+
+
+
+.h1,button:hover {
+
+    background: transparent;
+
+    border-color: #fd4766;
+
+    color: #fd4766;
+
+}
+
+
+
+.h1,button:hover {
+
+    background: #fff;
+
+    color: #00abf0;
+
+    transform: scale(1.05);
+
+}
 
  .skills-section {
      padding: 80px 8%;

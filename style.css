@@ -110,8 +110,9 @@ a {
 
 
 
-.btn {
-
+.h1,button {
+    cursor: pointer;
+    
     color: #fff;
 
     font-size: 16px;
@@ -140,7 +141,7 @@ a {
 
 
 
-.btn:hover {
+.h1,button:hover {
 
     background: transparent;
 
@@ -152,7 +153,7 @@ a {
 
 
 
-.btn-box a:hover {
+.h1,button:hover {
 
     background: #fff;
 
