@@ -641,7 +641,6 @@ a {
     }
 
 
-
     .home {
 
         position: static;
@@ -782,4 +781,15 @@ a {
 
     }
 
+}
+
+@media (min-width: 375px){
+
+    .btn-box{
+        margin: 5px;
+    }
+    
+    .btn-box a{
+        margin: 4px;
+    }
 }
