@@ -329,11 +329,9 @@ a {
 
 .btn-box {
 
-    display: inline-block;
+    display: inline;
 
     gap: 20px;
-
-    padding: 0 10%;
 
     margin-top: 1%;
 
@@ -395,6 +393,7 @@ a {
 
 .btn-box a:nth-child(2) {
 
+
     background: transparent;
 
     color: #00abf0;
@@ -447,7 +446,7 @@ a {
 
     padding: 4px;
 
-    margin-top: 15%;
+    margin-top: 10%;
 
     text-align: center;
 
